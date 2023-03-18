@@ -1,20 +1,14 @@
 # MSI GE66 10SF-416RU Hackintosh OpenCore 0.9.0 on Comet Lake-H
 
-<img valign="right" align="right" src="./Images/MSI GE66 Raider 10SF.png" alt="MSI GE66 Raider" width="250">
+<img valign="right" align="right" src="./Images/MSI GE66 Raider 10SF.png" alt="MSI GE66 Raider" width="500">
 
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.9.0-green.svg)](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.0)
 [![macOS](https://img.shields.io/badge/macOS_Ventura-13.2.1-orange.svg)](https://support.apple.com/en-us/HT213633)
 [![Windows](https://img.shields.io/badge/Windows_11-22H2-blue.svg)](https://learn.microsoft.com/en-US/windows/release-health/status-windows-11-22h2)
 
-</br>
-</br>
-
 ### ⚠️ Disclaimer | Дисклеймер
 
 ### EN:
-
-<img valign="right" align="right" src="./Images/VenturaGE66.png" alt="macOS Ventura MSI GE66 Raider" width="500">
-
 - "EFI" as it is, it's worth using it as an **example**, don't forget
 - The "EFI" may also contain extra garbage
 - Read to the end of this page before you start installing anything.
@@ -28,6 +22,19 @@
 - Не факт, что "EFI" будет обновляться с каждым выходом новой версии "OpenCore"
 - Возможно README не совсем полный или я мог что-то забыть)))
 ##
+
+### 📸 Screenshots | Скриншоты
+<details>
+<summary><strong>Show/Показать</strong></summary>
+<br>
+
+<p align="center">
+<img src="./Images/VenturaGE66.png" alt="macOS Ventura MSI GE66 Raider" width="700">
+<img src="./Images/Geekbench 6.png" alt="macOS Ventura MSI GE66 Raider Geekbench 6" width="700">
+<img src="./Images/HWMonitorSMC2.png" alt="macOS Ventura MSI GE66 Raider HWMonitorSMC2" width="700">
+</p>
+
+</details>
 
 ### 💻 Hardware | Железо
 <details>
@@ -47,7 +54,7 @@
 | **External SSD #3 [USB 3.0]**  | `APFS` `Kingston A400 256GB` (macOS is installed here) |  |
 | **WIFI+Bluetooth card**        | `Killer® Wi-Fi 6 AX1650i 160MHz + Bluetooth v5.1`      | Used kexts v2.2.0 `AirportItlwm` `IntelBluetoothFirmware` `BlueToolFixup` |
 | **Ethernet**                   | `Intel® Killer E3100 2.5Gbps`             | Used kext `AppleIntelI210Ethernet` and boot-args: `e1000=0` |
-| **Audio**                      | `Dynaudio 2x2W Speakers`                  | Used key in Device Properties `layout-id = 11` |
+| **Audio**                      | `Dynaudio 2x2W Speakers` `Realtek ALC298` | Used key in Device Properties `layout-id = 11` |
 | **Microphone+Audio jack+**     | `1x Mic-in/Headphone-out Combo Jack`      | Same as in "Audio" |
 | **Webcamera**                  | `FHD type (30fps@1080p)`                  | Same as in "I/O Ports" |
 | **Keyboard**                   | `Per-Key RGB Keyboard`                    | Used kexts `VooDooPS2Controllers` and same as in "I/O Ports" for Aurora/Per key RGB |
@@ -140,9 +147,10 @@ Russian: Вам нужно сгенерировать данные и подст
 </br>
 English: Standard settings, with the exception of Secure Boot
 </br>
-Russian: Стандартные настройки, за исключением Secure Boot
 </br>
-</br>  
+Russian: Стандартные настройки, за исключением Secure Boot
+</br> 
+</br>
 
 | **Hidden BIOS Settings / Скрытые настройки BIOS** | `Right Shift` + `Right Ctrl` + `Left Alt` + `F2` |
 |---|---|
@@ -167,7 +175,6 @@ Russian: Стандартные настройки, за исключением 
 | Secure Boot > Secure Boot Support | `Enabled` |
 
 </details>
-</br>
 
 <details>
 <summary><strong>🗒 config.plist edits</strong></summary>
@@ -175,6 +182,7 @@ Russian: Стандартные настройки, за исключением 
 ### Generating SMBIOS + Fix iServices:
 
 English: You need to generate the data (Type, Serial, Board Serial, SmUUID, ROM) and insert it into the config, a complete guide on how to do this is indicated under the star 
+</br>
 </br>
 Russian: Вам нужно сгенерировать данные (Type, Serial, Board Serial, SmUUID, ROM) и подставить их в конфиг, полное руководство как это сделать указано под звездочкой
 </br>
