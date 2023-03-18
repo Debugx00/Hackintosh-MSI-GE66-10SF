@@ -52,8 +52,8 @@
 | **NVMe SSD #1**                | `NTFS` `WD PC SN730 512GB` (Windows is installed here) | Visible in macOS and available in read-only mode |
 | **NVMe SSD #2**                | `NTFS` `WD BLACK SN750 1TB` (Used under Windows)       | Visible in macOS and available in read-only mode |
 | **External SSD #3 [USB 3.0]**  | `APFS` `Kingston A400 256GB` (macOS is installed here) |  |
-| **WIFI+Bluetooth card**        | `Killer® Wi-Fi 6 AX1650i 160MHz + Bluetooth v5.1`      | Used kexts v2.2.0 `AirportItlwm` `IntelBluetoothFirmware` `BlueToolFixup` |
-| **Ethernet**                   | `Intel® Killer E3100 2.5Gbps`             | Used kext `AppleIntelI210Ethernet` and boot-args: `e1000=0` |
+| **WIFI+Bluetooth card**        | `Killer® Wi-Fi 6 AX1650i 160MHz + Bluetooth v5.1` `Intel® AX201NGW`     | Used kexts v2.2.0 `AirportItlwm` `IntelBluetoothFirmware` `BlueToolFixup` |
+| **Ethernet**                   | `Intel® Killer E3100 2.5Gbps` `Intel® I225`           | Used kext `AppleIntelI210Ethernet` and boot-args: `e1000=0` |
 | **Audio**                      | `Dynaudio 2x2W Speakers` `Realtek ALC298` | Used key in Device Properties `layout-id = 11` |
 | **Microphone+Audio jack+**     | `1x Mic-in/Headphone-out Combo Jack`      | Same as in "Audio" |
 | **Webcamera**                  | `FHD type (30fps@1080p)`                  | Same as in "I/O Ports" |
