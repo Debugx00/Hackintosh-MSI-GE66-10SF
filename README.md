@@ -1,4 +1,4 @@
-# MSI GE66 10SF-416RU Hackintosh OpenCore 0.9.1 on Comet Lake-H
+# MSI GE66 10SF-416RU Hackintosh OpenCore 0.9.2 on Comet Lake-H
 
 <img valign="right" align="right" src="./Images/MSI GE66 Raider 10SF.png" alt="MSI GE66 Raider" width="500">
 
