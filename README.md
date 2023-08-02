@@ -1,9 +1,9 @@
-# MSI GE66 10SF-416RU Hackintosh OpenCore 0.9.2 on Comet Lake-H
+# MSI GE66 10SF-416RU Hackintosh OpenCore 0.9.3 on Comet Lake-H
 
 <img valign="right" align="right" src="./Images/MSI GE66 Raider 10SF.png" alt="MSI GE66 Raider" width="500">
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.2-green.svg)](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.1)
-[![macOS](https://img.shields.io/badge/macOS_Ventura-13.3-orange.svg)](https://support.apple.com/en-us/HT213670)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.3-green.svg)](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.3)
+[![macOS](https://img.shields.io/badge/macOS_Ventura-13.5-orange.svg)](https://support.apple.com/en-us/HT213843)
 [![Windows](https://img.shields.io/badge/Windows_11-22H2-blue.svg)](https://learn.microsoft.com/en-US/windows/release-health/status-windows-11-22h2)
 
 ### ⚠️ Disclaimer | Дисклеймер
