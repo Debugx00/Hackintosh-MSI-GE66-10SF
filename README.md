@@ -1,9 +1,9 @@
-# MSI GE66 10SF-416RU Hackintosh OpenCore 0.9.3 on Comet Lake-H
+# MSI GE66 10SF-416RU Hackintosh OpenCore 0.9.5 on Comet Lake-H
 
 <img valign="right" align="right" src="./Images/MSI GE66 Raider 10SF.png" alt="MSI GE66 Raider" width="500">
 
-[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.3-green.svg)](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.3)
-[![macOS](https://img.shields.io/badge/macOS_Ventura-13.5-orange.svg)](https://support.apple.com/en-us/HT213843)
+[![OpenCore](https://img.shields.io/badge/OpenCore-0.9.5-green.svg)](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.9.5)
+[![macOS](https://img.shields.io/badge/macOS_Sonoma-14.0-orange.svg)](https://support.apple.com/en-us/HT213940)
 [![Windows](https://img.shields.io/badge/Windows_11-22H2-blue.svg)](https://learn.microsoft.com/en-US/windows/release-health/status-windows-11-22h2)
 
 ### ⚠️ Disclaimer | Дисклеймер
@@ -29,9 +29,9 @@
 <br>
 
 <p align="center">
-<img src="./Images/VenturaGE66.png" alt="macOS Ventura MSI GE66 Raider" width="700">
-<img src="./Images/Geekbench 6.png" alt="macOS Ventura MSI GE66 Raider Geekbench 6" width="700">
-<img src="./Images/HWMonitorSMC2.png" alt="macOS Ventura MSI GE66 Raider HWMonitorSMC2" width="700">
+<img src="./Images/SonomaGE66.png" alt="macOS Sonoma MSI GE66 Raider" width="700">
+<img src="./Images/Geekbench 6.png" alt="macOS Sonoma MSI GE66 Raider Geekbench 6" width="700">
+<img src="./Images/HWMonitorSMC2.png" alt="macOS Sonoma MSI GE66 Raider HWMonitorSMC2" width="700">
 </p>
 
 </details>
@@ -43,7 +43,7 @@
 
 | Component                      | Brand/info                                | Extra         |
 |--------------------------------|:-----------------------------------------:|:-------------:|
-| **Display**                    | `15.6" FHD (1920x1080), 240Hz, IPS-Level` | Used ACPI `SSDT-PNLF` and boot-args `-igfxblr` for fix backlight and `-igfxmpc` for 240Hz|
+| **Display**                    | `15.6" FHD (1920x1080), 240Hz, IPS-Level` | Used ACPI `SSDT-PNLF` and boot-args `-igfxblt` for fix backlight and `-igfxmpc` for 240Hz|
 | **Chipset**                    | `Intel® HM470`                                         |  |
 | **CPU**                        | `Intel® Core i7-10875H 2.30GHz up to 5.10GHz`          |  |
 | **iGPU**                       | `Intel® UHD Graphics 630`                 | 2048Mb with used key `framebuffer-patch-enable=01000000` and `framebuffer-unifiedmem=00000080 ` |
@@ -52,7 +52,7 @@
 | **NVMe SSD #1**                | `NTFS` `WD PC SN730 512GB` (Windows is installed here) | Visible in macOS and available in read-only mode |
 | **NVMe SSD #2**                | `NTFS` `WD BLACK SN750 1TB` (Used under Windows)       | Visible in macOS and available in read-only mode |
 | **External SSD #3 [USB 3.0]**  | `APFS` `Kingston A400 256GB` (macOS is installed here) |  |
-| **WIFI+Bluetooth card**        | `Killer® Wi-Fi 6 AX1650i 160MHz + Bluetooth v5.1` `Intel® AX201NGW`     | Used kexts v2.2.0 `AirportItlwm` `IntelBluetoothFirmware` `BlueToolFixup` |
+| **WIFI+Bluetooth card**        | `Killer® Wi-Fi 6 AX1650i 160MHz + Bluetooth v5.1` `Intel® AX201NGW`     | Used kexts `AirportItlwm` `IntelBluetoothFirmware` `BlueToolFixup` |
 | **Ethernet**                   | `Intel® Killer E3100 2.5Gbps` `Intel® I225`           | Used kext `AppleIntelI210Ethernet` and boot-args: `e1000=0` |
 | **Audio**                      | `Dynaudio 2x2W Speakers` `Realtek ALC298` | Used key in Device Properties `layout-id = 11` |
 | **Microphone+Audio jack+**     | `1x Mic-in/Headphone-out Combo Jack`      | Same as in "Audio" |
